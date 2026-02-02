@@ -3,27 +3,336 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <style>
-        h1{
-            color:blue;
-            background-color: yellowgreen;
-            text-align: center;
-        }
-        p{
-            color:red;
-            font-size:20px;
-        }
-        #par1{
-            color: green;
-            font-size: 25px;
-        }
-    </style>
+    <title>Professor Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, Everyone</h1>
-    <p id="par1">This is a sample paragraph on the home page</p>
-    <p>This is a second paragraph</p>
-    <p>This is bio section</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Prof. Portfolio</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/200" alt="Professor" class="profile-img">
+            </div>
+            <div class="hero-text">
+                <h1>Dr. Sarah Johnson</h1>
+                <p class="subtitle">Professor of Computer Science</p>
+                <p class="tagline">Passionate about Teaching, Research, and Innovation</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a dedicated professor with over 15 years of experience in computer science education and research. My passion lies in creating innovative learning experiences and conducting cutting-edge research that bridges the gap between academia and industry.</p>
+                    <p>With a Ph.D. in Computer Science from a leading institution, I have published numerous research papers, mentored countless students, and collaborated with international research teams. I believe in fostering a culture of critical thinking and practical application of knowledge.</p>
+                    <div class="quick-facts">
+                        <div class="fact">
+                            <h3>15+</h3>
+                            <p>Years of Experience</p>
+                        </div>
+                        <div class="fact">
+                            <h3>200+</h3>
+                            <p>Students Mentored</p>
+                        </div>
+                        <div class="fact">
+                            <h3>50+</h3>
+                            <p>Research Papers</p>
+                        </div>
+                        <div class="fact">
+                            <h3>30+</h3>
+                            <p>Industry Collaborations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400x300" alt="About Professor">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Expertise & Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <ul class="skill-list">
+                        <li>Machine Learning & AI</li>
+                        <li>Data Science</li>
+                        <li>Cloud Computing</li>
+                        <li>Software Engineering</li>
+                        <li>Cybersecurity</li>
+                        <li>Web Development</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>R</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Frameworks</h3>
+                    <ul class="skill-list">
+                        <li>TensorFlow & PyTorch</li>
+                        <li>Docker & Kubernetes</li>
+                        <li>Git & GitHub</li>
+                        <li>AWS & Azure</li>
+                        <li>Django & Flask</li>
+                        <li>PostgreSQL & MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li>Leadership</li>
+                        <li>Research & Analysis</li>
+                        <li>Teaching & Mentoring</li>
+                        <li>Project Management</li>
+                        <li>Communication</li>
+                        <li>Collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Research Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>AI-Powered Student Learning Analytics</h3>
+                        <p class="project-year">2023 - Present</p>
+                        <p>Developing an intelligent system to analyze student performance and predict learning outcomes using advanced machine learning algorithms.</p>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Education</span>
+                            <span class="tag">Data Science</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>Cybersecurity Framework for IoT</h3>
+                        <p class="project-year">2022 - 2023</p>
+                        <p>Designed and implemented a comprehensive cybersecurity framework for Internet of Things devices in industrial settings.</p>
+                        <div class="project-tags">
+                            <span class="tag">Cybersecurity</span>
+                            <span class="tag">IoT</span>
+                            <span class="tag">Cloud Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                        <h3>Natural Language Processing for Healthcare</h3>
+                        <p class="project-year">2021 - 2022</p>
+                        <p>Created NLP models to extract and analyze medical information from clinical notes and research publications.</p>
+                        <div class="project-tags">
+                            <span class="tag">NLP</span>
+                            <span class="tag">Healthcare</span>
+                            <span class="tag">AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Project 4">
+                    </div>
+                    <div class="project-content">
+                        <h3>Distributed Computing Systems</h3>
+                        <p class="project-year">2020 - 2021</p>
+                        <p>Researched efficient algorithms for distributed systems and developed novel approaches to optimize performance.</p>
+                        <div class="project-tags">
+                            <span class="tag">Distributed Systems</span>
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">Performance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2018 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Full Professor</h3>
+                        <p class="organization">University of Excellence</p>
+                        <p>Leading the Computer Science Department, mentoring Ph.D. students, and conducting groundbreaking research in AI and Machine Learning.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2015 - 2018</div>
+                    <div class="timeline-content">
+                        <h3>Associate Professor</h3>
+                        <p class="organization">Tech Institute</p>
+                        <p>Taught advanced courses in data structures, algorithms, and system design while building a strong research program.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2011 - 2015</div>
+                    <div class="timeline-content">
+                        <h3>Assistant Professor</h3>
+                        <p class="organization">Research University</p>
+                        <p>Established research lab, published first research papers, and developed innovative course curricula.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2009 - 2011</div>
+                    <div class="timeline-content">
+                        <h3>Postdoctoral Research Fellow</h3>
+                        <p class="organization">International Research Center</p>
+                        <p>Conducted independent research in machine learning with leading scientists in the field.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2005 - 2009</div>
+                    <div class="timeline-content">
+                        <h3>Ph.D. in Computer Science</h3>
+                        <p class="organization">Premier Technical University</p>
+                        <p>Dissertation focused on optimization algorithms and their applications in distributed systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:sarah.johnson@university.edu">sarah.johnson@university.edu</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Office</h3>
+                        <p>Computer Science Building, Room 401<br>University of Excellence</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Office Hours</h3>
+                        <p>Monday - Friday: 2:00 PM - 4:00 PM</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <p>Professor Portfolio showcasing expertise, projects, and professional experience in Computer Science.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">ResearchGate</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Professor Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
